@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Desaturated-Red: hsl(0, 36%, 70%);
+  --Soft-Red: hsl(0, 93%, 68%);
+  --Dark-Grayish-Red: hsl(0, 6%, 24%);
+}
+
+body {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  max-height: 800px;
+}
+.logo__m{
+  display: none;
+}
+
+.text {
+  background-image: url(./images/bg-pattern-desktop.svg),
+    linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)),
+    linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  padding-left: 165px;
+  padding-right: 200px;
+  padding-top: 65px;
+  max-width: 830px;
+}
+
+.body {
+  margin-top: 140px;
+}
+
+.head {
+  font-size: 70px;
+  text-transform: uppercase;
+  letter-spacing: 14px;
+  color: var(--Dark-Grayish-Red);
+}
+
+span {
+  font-weight: 300;
+  color: var(--Desaturated-Red);
+}
+
+p {
+  font-weight: 600;
+}
+
+.lead {
+  margin-top: 15px;
+  color: var(--Desaturated-Red);
+  line-height: 30px;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+form {
+  display: flex;
+}
+
+.form__input {
+  color: var(--Desaturated-Red);
+  font-size: 16px;
+  border-radius: 30px;
+  border-color: var(--Desaturated-Red);
+  border: 1px solid;
+  width: 420px;
+  height: 55px;
+  margin-top: 60px;
+}
+
+.form__button {
+  position: absolute;
+  z-index: 3;
+  left: 575px;
+  transform: translate(-50%, 109%);
+  width: 100px;
+  height: 55px;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border: none;
+  box-shadow: 13px 6px 23px 2px #dedede;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.form__icon__error {
+  position: absolute;
+  left: 490px;
+  transform: translate(-50%, 312%);
+  display: none;
+}
+
+.form__error {
+  position: absolute;
+  transform: translate(0%, 800%);
+  font-size: 0.8rem;
+  margin-left: 1rem;
+  color: hsl(0, 93%, 68%);
+  display: none;
+}
+
+.form__error p {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.active {
+  display: block;
+}
+
+::-webkit-input-placeholder {
+  color: var(--Desaturated-Red);
+  padding-left: 40px;
+}
+
+#submit {
+  background: url(./images/icon-arrow.svg) no-repeat center left;
+}
+
+.foto {
+  max-width: 610px;
+}
+
+.foto__mobile {
+  display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
